@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: raw
+    database: ANALYTICS_ENGINEERING_PORTFOLIO
+    schema: RAW
+
+    tables:
+      - name: google_ads_daily
+        description: "Daily Google Ads campaign performance data."

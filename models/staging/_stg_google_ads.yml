@@ -1,0 +1,47 @@
+version: 2
+
+models:
+  - name: stg_google_ads
+    description: "Cleaned daily Google Ads campaign performance data."
+
+    columns:
+      - name: performance_date
+        description: "Date of campaign performance."
+        data_tests:
+          - not_null
+
+      - name: campaign_id
+        description: "Google Ads campaign identifier."
+        data_tests:
+          - not_null
+
+      - name: campaign_name
+        data_tests:
+          - not_null
+
+      - name: channel
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['paid_search']
+
+      - name: spend
+        data_tests:
+          - not_null
+
+      - name: impressions
+        data_tests:
+          - not_null
+
+      - name: clicks
+        data_tests:
+          - not_null
+
+      - name: conversions
+        data_tests:
+          - not_null
+
+      - name: revenue
+        data_tests:
+          - not_null
