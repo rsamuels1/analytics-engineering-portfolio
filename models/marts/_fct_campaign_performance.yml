@@ -17,6 +17,10 @@ models:
         description: "Identifier for the advertising campaign."
         data_tests:
           - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_campaign')
+                field: campaign_id
 
       - name: spend
         description: "Total advertising spend for the campaign and date."
