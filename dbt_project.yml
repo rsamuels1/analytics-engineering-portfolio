@@ -16,7 +16,16 @@ models:
   analytics_engineering_portfolio:
     staging:
       +materialized: view
+      +schema: STAGING
+
     intermediate:
       +materialized: view
+      +schema: STAGING
+
     marts:
       +materialized: table
+      +schema: MARTS
+
+seeds:
+  analytics_engineering_portfolio:
+    +schema: RAW
