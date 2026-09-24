@@ -1,0 +1,36 @@
+version: 2
+
+models:
+  - name: fct_campaign_performance
+    description: >
+      Daily campaign performance fact table containing advertising delivery,
+      spend, conversion, revenue, and efficiency metrics. Grain is one row
+      per campaign per performance date.
+
+    columns:
+      - name: performance_date
+        description: "Date on which campaign performance occurred."
+        data_tests:
+          - not_null
+
+      - name: campaign_id
+        description: "Identifier for the advertising campaign."
+        data_tests:
+          - not_null
+
+      - name: spend
+        description: "Total advertising spend for the campaign and date."
+        data_tests:
+          - not_null
+
+      - name: ctr
+        description: "Click-through rate: clicks divided by impressions."
+
+      - name: cpc
+        description: "Cost per click: spend divided by clicks."
+
+      - name: cpa
+        description: "Cost per acquisition: spend divided by conversions."
+
+      - name: roas
+        description: "Return on ad spend: revenue divided by spend."
