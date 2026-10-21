@@ -8,3 +8,6 @@ sources:
     tables:
       - name: google_ads_daily
         description: "Daily Google Ads campaign performance data."
+
+      - name: bookings
+        description: "Raw customer booking records from the reservation system."

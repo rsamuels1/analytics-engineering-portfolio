@@ -1,0 +1,11 @@
+booking_id,customer_id,booking_date,tour_name,guests,total_amount,status
+B001,C101,2026-09-01,Portland Bike Tour,2,180.00,completed
+B002,C102,2026-09-01,Columbia Gorge Tour,4,480.00,completed
+B003,C101,2026-09-03,Portland Bike Tour,1,90.00,completed
+B004,C103,2026-09-03,Columbia Gorge Tour,2,240.00,cancelled
+B005,C104,2026-09-04,Portland Bike Tour,3,270.00,confirmed
+B006,C105,2026-09-05,Columbia Gorge Tour,2,240.00,completed
+B007,C106,2026-09-06,Portland Bike Tour,2,180.00,completed
+B008,C102,2026-09-07,Columbia Gorge Tour,3,360.00,confirmed
+B009,C107,2026-09-08,Portland Bike Tour,4,360.00,cancelled
+B010,C108,2026-09-09,Columbia Gorge Tour,2,240.00,completed

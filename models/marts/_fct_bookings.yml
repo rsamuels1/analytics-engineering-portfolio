@@ -1,0 +1,48 @@
+version: 2
+
+models:
+  - name: fct_bookings
+    description: >
+      Booking-level fact table containing the latest known state
+      of each reservation. One row per booking.
+
+      Realized revenue is defined as the booking amount for
+      completed bookings only. Confirmed bookings contribute
+      to pending booking value. Cancelled bookings contribute
+      to neither metric.
+
+    columns:
+      - name: booking_id
+        description: "Unique identifier for each booking."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: customer_id
+        description: "Customer associated with the booking."
+        data_tests:
+          - not_null
+
+      - name: booking_status
+        description: "Current status of the reservation."
+        data_tests:
+          - not_null
+
+      - name: booking_amount
+        description: "Original monetary value of the reservation."
+        data_tests:
+          - not_null
+
+      - name: realized_revenue
+        description: >
+          Booking amount for completed reservations.
+          Zero for confirmed and cancelled reservations.
+        data_tests:
+          - not_null
+
+      - name: pending_booking_value
+        description: >
+          Booking amount for confirmed reservations.
+          Zero for completed and cancelled reservations.
+        data_tests:
+          - not_null
