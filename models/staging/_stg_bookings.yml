@@ -1,0 +1,40 @@
+version: 2
+
+models:
+  - name: stg_bookings
+    description: >
+      Cleaned booking records from the reservation system.
+      Each row represents the latest known state of one booking.
+
+    columns:
+      - name: booking_id
+        description: "Unique booking identifier."
+        data_tests:
+          - not_null
+          - unique
+
+      - name: customer_id
+        description: "Customer associated with the booking."
+        data_tests:
+          - not_null
+
+      - name: booking_date
+        description: "Date the booking was created."
+        data_tests:
+          - not_null
+
+      - name: booking_amount
+        description: "Total value of the booking."
+        data_tests:
+          - not_null
+
+      - name: booking_status
+        description: "Current status of the booking."
+        data_tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values:
+                  - completed
+                  - confirmed
+                  - cancelled
