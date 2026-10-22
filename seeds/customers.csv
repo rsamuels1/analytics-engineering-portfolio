@@ -1,0 +1,9 @@
+customer_id,first_name,last_name,email,signup_date,acquisition_channel,customer_city
+C101,Alex,Morgan,alex.morgan@example.com,2026-08-15,Google Ads,Portland
+C102,Jordan,Lee,jordan.lee@example.com,2026-08-20,Organic Search,Seattle
+C103,Taylor,Kim,taylor.kim@example.com,2026-08-25,Direct,Portland
+C104,Sam,Rivera,sam.rivera@example.com,2026-08-28,Google Ads,Vancouver
+C105,Casey,Patel,casey.patel@example.com,2026-09-01,Referral,Portland
+C106,Morgan,Chen,morgan.chen@example.com,2026-09-02,Organic Search,Seattle
+C107,Jamie,Brooks,jamie.brooks@example.com,2026-09-03,Social Media,Eugene
+C108,Drew,Wilson,drew.wilson@example.com,2026-09-04,Google Ads,Portland
