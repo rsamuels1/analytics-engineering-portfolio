@@ -8,3 +8,22 @@ target/
 dbt_packages/
 logs/
 .user.yml
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+
+# dbt generated files
+target/
+dbt_packages/
+logs/
+
+# macOS
+.DS_Store
