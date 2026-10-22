@@ -1,0 +1,31 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: >
+      Cleaned customer records from the CRM.
+      One row per customer.
+
+    columns:
+      - name: customer_id
+        description: "Unique customer identifier."
+        data_tests:
+          - unique
+          - not_null
+
+      - name: email
+        description: "Customer email address."
+        data_tests:
+          - not_null
+
+      - name: signup_date
+        description: "Date the customer registered."
+        data_tests:
+          - not_null
+
+      - name: acquisition_channel
+        description: >
+          Original customer acquisition channel.
+          Missing values are standardized to Unknown.
+        data_tests:
+          - not_null

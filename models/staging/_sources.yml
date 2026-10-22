@@ -11,3 +11,6 @@ sources:
 
       - name: bookings
         description: "Raw customer booking records from the reservation system."
+
+      - name: customers
+        description: "Raw customer records from the CRM."
